@@ -11,7 +11,7 @@ const { successMsg, errorMsg } = require("../../_utils/messages");
 module.exports = async (req, res) => {
    const { name, lastName, email, password } = req.body;
 
-   if (password.lenght < 8) {
+   if (password.length < 8) {
       return res.status(400).json({
          status: "Error",
          message: errorMsg.user.PASSWORDLEN,

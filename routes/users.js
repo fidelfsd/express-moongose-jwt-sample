@@ -5,7 +5,7 @@ const isAdmin = require("../middelwares/isAdmin");
 const router = express.Router();
 
 /* GET users listing. */
-//router.get("/", verifyToken, isAdmin, userController.getAll);
-router.get("/", userController.getAll);
+router.get("/", verifyToken, isAdmin, userController.getAll);
+//router.get("/", userController.getAll);
 
 module.exports = router;
