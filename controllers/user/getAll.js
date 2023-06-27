@@ -29,6 +29,10 @@ module.exports = async (req, res) => {
          // ocultar campos
          { password: 0, createdAt: 0, updatedAt: 0, __v: 0 }
       )
+         .populate({
+            path: "courses",
+            select: "name category -_id",
+         })
          .skip(offset)
          .limit(LIMIT);
 

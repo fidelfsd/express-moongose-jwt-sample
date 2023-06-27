@@ -6,7 +6,19 @@ const errorMsg = {
       GETALL: "Error retreiving all users",
       GETONE: "Error retreiving user",
       NOTFOUND: "User not found",
+      NOTVALID_ID: "User ID not valid",
       PASSWORDLEN: "Password length can not be less than 8",
+   },
+
+   course: {
+      CREATE: "Error creating course",
+      UPDATE: "Error updating course",
+      DELETE: "Error deleting course",
+      GETALL: "Error retreiving all courses",
+      GETONE: "Error retreiving course",
+      NOTFOUND: "Course not found",
+      ASSIGNED: "Course already assigned",
+      NOTVALID_ID: "Course ID not valid",
    },
 
    pagination: {
@@ -31,6 +43,12 @@ const successMsg = {
       CREATE: "User created succsessfully",
       UPDATE: "User updated succsessfully",
       DELETE: "User deleted succsessfully",
+   },
+
+   course: {
+      CREATE: "Couurse created succsessfully",
+      UPDATE: "Couurse updated succsessfully",
+      DELETE: "Couurse deleted succsessfully",
    },
 };
 

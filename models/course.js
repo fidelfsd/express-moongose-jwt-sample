@@ -24,6 +24,7 @@ const courseSchema = new Schema(
    {
       timestamps: true,
       collection: "courses",
+      versionKey: false,
    }
 );
 

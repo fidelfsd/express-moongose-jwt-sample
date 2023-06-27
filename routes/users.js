@@ -4,8 +4,10 @@ const verifyToken = require("../middelwares/verifyToken");
 const isAdmin = require("../middelwares/isAdmin");
 const router = express.Router();
 
-/* GET users listing. */
+// GET users listing
 router.get("/", verifyToken, isAdmin, userController.getAll);
-//router.get("/", userController.getAll);
+
+// add course
+router.put("/:userId/course", verifyToken, isAdmin, userController.addCourse);
 
 module.exports = router;

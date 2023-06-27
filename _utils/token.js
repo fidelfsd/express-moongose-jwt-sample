@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 // generar token
 const generateToken = (payload) =>
    jwt.sign(payload, process.env.JWT_SECRET, {
-      expiresIn: "1h",
+      expiresIn: "10h",
    });
 
 // extraer el token de la cabeceera de la peticion (request)
